@@ -1,22 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Image from './opossum.jpg';
+import Searchbar from './components/searchbar.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={Image} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          What Kind of Animals are You Lifting???
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Searchbar/>
       </header>
     </div>
   );
