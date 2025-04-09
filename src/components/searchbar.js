@@ -1,54 +1,33 @@
 import React, {useState} from 'react'
+import data from '../animaldb.json' with { type: "json" };
 
 const Searchbar = () => {
     const [searchInput, setSearchInput] = useState("")
-
-    const countries = [
-
-        { name: "Belgium", continent: "Europe" },
-        { name: "India", continent: "Asia" },
-        { name: "Bolivia", continent: "South America" },
-        { name: "Ghana", continent: "Africa" },
-        { name: "Japan", continent: "Asia" },
-        { name: "Canada", continent: "North America" },
-        { name: "New Zealand", continent: "Australasia" },
-        { name: "Italy", continent: "Europe" },
-        { name: "South Africa", continent: "Africa" },
-        { name: "China", continent: "Asia" },
-        { name: "Paraguay", continent: "South America" },
-        { name: "Usa", continent: "North America" },
-        { name: "France", continent: "Europe" },
-        { name: "Botswana", continent: "Africa" },
-        { name: "Spain", continent: "Europe" },
-        { name: "Senegal", continent: "Africa" },
-        { name: "Brazil", continent: "South America" },
-        { name: "Denmark", continent: "Europe" },
-        { name: "Mexico", continent: "South America" },
-        { name: "Australia", continent: "Australasia" },
-        { name: "Tanzania", continent: "Africa" },
-        { name: "Bangladesh", continent: "Asia" },
-        { name: "Portugal", continent: "Europe" },
-        { name: "Pakistan", continent:"Asia"},
-      
-      ];
+    const [foundAnimal, setFoundAnimal] = useState([])
 
       const handleChange = (e) =>{
         e.preventDefault();
         setSearchInput(e.target.value);
       };
 
-      function displayStuff (){
-        document.getElementById("submitdisplay").textContent = "BUTTASS";
+      function searchAndDisplay(){
+        const liftychonkins = data.filter(data => data.averageLBs < searchInput)
+        var lifterdood;
+        var y = Infinity;
+        var x
+        for (x=0;x < data.length; x++){
+            if (Math.abs(searchInput - data[x].averageLBs)<y){
+                y = Math.abs(searchInput - data[x].averageLBs)
+                lifterdood = data[x];
+            }
+            }
+            console.log(lifterdood);
+        document.getElementById("submitdisplay").textContent = "The average " + JSON.stringify(lifterdood.name) + " weighs " + JSON.stringify(lifterdood.averageLBs);
       }
-      
-
-      if (searchInput.length >0){
-        countries.filter((country)=>{return country.name.match(searchInput);})
-      };
 
       return <div>
-        <input type="search" placeholder="a bajillion?" onChange={handleChange} value={searchInput}></input>
-        <button type="submit" onClick={displayStuff}>submit</button>
+        <input type="number" placeholder="a bajillion?" onChange={handleChange} value={searchInput}></input>
+        <button type="submit" onClick={searchAndDisplay}>submit</button>
         <div id="submitdisplay"></div>
       </div>
 }
