@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/animallifting/static/css/main.f855e6bc.css",
+    "main.js": "/animallifting/static/js/main.74b3ad4e.js",
+    "static/js/453.8bb41729.chunk.js": "/animallifting/static/js/453.8bb41729.chunk.js",
+    "static/media/opossum.jpg": "/animallifting/static/media/opossum.190ba654a8dbce2dd72b.jpg",
+    "index.html": "/animallifting/index.html",
+    "main.f855e6bc.css.map": "/animallifting/static/css/main.f855e6bc.css.map",
+    "main.74b3ad4e.js.map": "/animallifting/static/js/main.74b3ad4e.js.map",
+    "453.8bb41729.chunk.js.map": "/animallifting/static/js/453.8bb41729.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.74b3ad4e.js"
+  ]
+}
