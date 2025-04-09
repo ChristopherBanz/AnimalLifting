@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/animallifting/static/css/main.f855e6bc.css",
-    "main.js": "/animallifting/static/js/main.74b3ad4e.js",
-    "static/js/453.8bb41729.chunk.js": "/animallifting/static/js/453.8bb41729.chunk.js",
-    "static/media/opossum.jpg": "/animallifting/static/media/opossum.190ba654a8dbce2dd72b.jpg",
-    "index.html": "/animallifting/index.html",
-    "main.f855e6bc.css.map": "/animallifting/static/css/main.f855e6bc.css.map",
-    "main.74b3ad4e.js.map": "/animallifting/static/js/main.74b3ad4e.js.map",
-    "453.8bb41729.chunk.js.map": "/animallifting/static/js/453.8bb41729.chunk.js.map"
+    "main.css": "/static/css/main.f855e6bc.css",
+    "main.js": "/static/js/main.08350a82.js",
+    "static/js/453.8bb41729.chunk.js": "/static/js/453.8bb41729.chunk.js",
+    "static/media/opossum.jpg": "/static/media/opossum.190ba654a8dbce2dd72b.jpg",
+    "index.html": "/index.html",
+    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
+    "main.08350a82.js.map": "/static/js/main.08350a82.js.map",
+    "453.8bb41729.chunk.js.map": "/static/js/453.8bb41729.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.74b3ad4e.js"
+    "static/js/main.08350a82.js"
   ]
 }
